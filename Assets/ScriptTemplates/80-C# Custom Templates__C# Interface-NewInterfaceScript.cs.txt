@@ -1,0 +1,8 @@
+
+namespace FG 
+{
+	public interface #SCRIPTNAME# 
+	{
+	
+	}
+}
