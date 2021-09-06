@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BigAssignment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BigAssignment/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/00.Sandbox.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/00.Sandbox.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scripts/Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +25,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scripts/Player/RotaionConstraint.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1wxYpKvGj12r008YJ8XNNIPqYNu" />
   <component name="ProjectViewState">
@@ -84,7 +88,8 @@
       <workItem from="1630656902683" duration="1000" />
       <workItem from="1630670813861" duration="4538000" />
       <workItem from="1630687654117" duration="6225000" />
-      <workItem from="1630913024608" duration="4235000" />
+      <workItem from="1630913024608" duration="7927000" />
+      <workItem from="1630926491531" duration="4711000" />
     </task>
     <servers />
   </component>
