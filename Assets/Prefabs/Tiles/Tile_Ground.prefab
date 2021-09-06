@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3899766937077651860}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile_Ground
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3741302821906511816}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 6128106763066155567}
   - component: {fileID: 5687867336850918684}
   - component: {fileID: 21385601416141675}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
