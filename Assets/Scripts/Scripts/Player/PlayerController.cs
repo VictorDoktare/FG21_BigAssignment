@@ -21,7 +21,12 @@ namespace FG
 				StartCoroutine(RollPlayer(pivotAnchor, pivotAxis));
 			}
 		}
-		
+
+		void RollDirection(float direction)
+		{
+			
+		}
+
 		IEnumerator RollPlayer(Vector3 anchor, Vector3 axis)
 		{
 			isMoving = true;
