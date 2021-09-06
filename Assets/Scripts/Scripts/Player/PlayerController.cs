@@ -37,7 +37,7 @@ namespace FG
 
 		private void FixedUpdate()
 		{
-			CollisionChecks();
+			GroundCheck();
 		}
 
 		#endregion
@@ -86,7 +86,6 @@ namespace FG
 			{
 				transform.RotateAround(anchor, axis, rollSpeed);
 				yield return new WaitForSeconds(0.01f);
-				
 			}
 			
 			//Correcting the position and rotation of the cube to make sure there no decimal offsets after each move since those can add up.
@@ -103,8 +102,8 @@ namespace FG
 			_isMoving = false;
 		}
 
-		//Using raycasts for collision checks since i need the player to be kinematic to avoid offset problems
-		void CollisionChecks()
+		//Using raycasts for ground check since i need the player to be kinematic to avoid offset problems
+		void GroundCheck()
 		{
 			if (Physics.Raycast(_objRaycaster.transform.position,
 				_objRaycaster.transform.TransformDirection(Vector3.down),
