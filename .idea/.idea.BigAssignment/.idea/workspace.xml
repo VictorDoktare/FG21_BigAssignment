@@ -6,13 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="851b4afe-8c60-4333-997a-11528cc4233b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BigAssignment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BigAssignment/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/00.Sandbox.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/00.Sandbox.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Player/RotaionConstraint.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Player/RotaionConstraint.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/00.LevelSelect.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/00.LevelSelect.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/00.StartMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/00.StartMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01.Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01.Level.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +25,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scripts/General/SpawnObject.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1wxYpKvGj12r008YJ8XNNIPqYNu" />
   <component name="ProjectViewState">
@@ -93,7 +92,8 @@
       <workItem from="1630926491531" duration="7442000" />
       <workItem from="1631088667430" duration="66000" />
       <workItem from="1631172196786" duration="1590000" />
-      <workItem from="1631176605731" duration="459000" />
+      <workItem from="1631176605731" duration="3680000" />
+      <workItem from="1631185445185" duration="5298000" />
     </task>
     <servers />
   </component>
