@@ -7,23 +7,10 @@
     <list default="true" id="851b4afe-8c60-4333-997a-11528cc4233b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BigAssignment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BigAssignment/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Fonts/TitanOne-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Fonts/TitanOne-Regular SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Prototype/mat_Block.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Prototype/mat_Block.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Pickup_Bone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Pickup_Bone.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/01.Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01.Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/General.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/General/SpawnObject.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/General/SpawnObject.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Managers.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Managers/UIManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Managers/UIManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Player.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Player/PlayerController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Player/PlayerController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mono/General/Pickup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mono/General/Pickup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mono/Managers/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mono/Managers/UIManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +94,7 @@
       <workItem from="1631176605731" duration="3680000" />
       <workItem from="1631185445185" duration="6040000" />
       <workItem from="1631194178542" duration="1511000" />
+      <workItem from="1631517762360" duration="7754000" />
     </task>
     <servers />
   </component>
