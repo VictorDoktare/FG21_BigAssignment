@@ -8,28 +8,22 @@ namespace FG
 {
 	public class UIManager : MonoBehaviour
 	{
-		private UIManager _uiManager = null;
 		private int pickupScore = 0;
-		
+		private int _scoreToWin;
+		[HideInInspector]
+		public bool canWin = false;
+
 		#region Unity Event Functions
 		private void Awake()
 		{
-			if (_uiManager != null)
-			{
-				Destroy(gameObject);
-			}
-			else
-			{
-				_uiManager = this;
-				DontDestroyOnLoad(gameObject);
-			}
-
-			pickupScore = 0;
+			//Amount of pickups to get before u can complete the level
+			//doing it like this i dont have to bother changing any values while designing level.
+			_scoreToWin = GameObject.FindGameObjectsWithTag("Pickup").Length;
 		}
 
 		private void Start()
 		{
-			pickupScore = 0;
+			canWin = false;
 		}
 
 		#endregion
@@ -38,18 +32,23 @@ namespace FG
 		{
 			SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
 		}
+		
 		public void ExitGame()
 		{
 			Application.Quit();
 			EditorApplication.ExitPlaymode();
 		}
-
+		
 		public void UpdateScore()
 		{
 			var scoreText = GameObject.Find("Text_Pickup").GetComponent<TextMeshProUGUI>();
-			
 			pickupScore++;
 			scoreText.text = pickupScore.ToString();
+			
+			if (pickupScore >= _scoreToWin)
+			{
+				canWin = true;
+			}
 		}
 	}
 }

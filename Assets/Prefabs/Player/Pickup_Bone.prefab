@@ -142,7 +142,7 @@ MonoBehaviour:
   _triggerPickupEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: -6322659852499765874, guid: 0e44aeac35445be4aaba3a12cdd67c4f, type: 3}
         m_TargetAssemblyTypeName: FG.UIManager, Assembly-CSharp
         m_MethodName: UpdateScore
         m_Mode: 1
