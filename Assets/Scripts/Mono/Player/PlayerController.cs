@@ -11,7 +11,7 @@ namespace FG
 		private GameObject _objRaycaster;
 		private RaycastHit _raycastHit;
 		
-		public bool _isMoving;
+		private bool _isMoving;
 		private int _layerMask = 0;
 
 		#region Unity Event Functions

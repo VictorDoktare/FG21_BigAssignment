@@ -1,54 +1,49 @@
-using System;
 using TMPro;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace FG 
 {
+	//Singleton pattern.
 	public class UIManager : MonoBehaviour
 	{
-		private int pickupScore = 0;
-		private int _scoreToWin;
-		[HideInInspector]
-		public bool canWin = false;
-
-		#region Unity Event Functions
+		private static UIManager instance; 
+		public static UIManager Instance => instance;
+		
+		//public static event Action OnPlayerPickup;
+		
 		private void Awake()
 		{
-			//Amount of pickups to get before u can complete the level
-			//doing it like this i dont have to bother changing any values while designing level.
-			_scoreToWin = GameObject.FindGameObjectsWithTag("Pickup").Length;
+			CheckForInstance();
 		}
 
-		private void Start()
+		//Singleton setup.
+		private void CheckForInstance()
 		{
-			canWin = false;
-		}
-
-		#endregion
-
-		public void LoadSceneSingle(string sceneName)
-		{
-			SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
-		}
-		
-		public void ExitGame()
-		{
-			Application.Quit();
-			EditorApplication.ExitPlaymode();
-		}
-		
-		public void UpdateScore()
-		{
-			var scoreText = GameObject.Find("Text_Pickup").GetComponent<TextMeshProUGUI>();
-			pickupScore++;
-			scoreText.text = pickupScore.ToString();
-			
-			if (pickupScore >= _scoreToWin)
+			if (instance == null)
 			{
-				canWin = true;
+				
+				instance = this;
+				DontDestroyOnLoad(gameObject);
+				
+			}
+			else
+			{
+				Destroy(gameObject);
 			}
 		}
+
+		//Level to load based on name.
+		public void LoadLevel(string levelName)
+		{
+			SceneManager.LoadScene(levelName, LoadSceneMode.Single);
+		}
+
+		//Update UI HUD containing the amount of pickups collected.
+		public void UpdatePickupHud(int value)
+		{
+			GameObject.Find("Text_Pickup").GetComponent<TextMeshProUGUI>().text = value.ToString();
+		}
+
 	}
 }

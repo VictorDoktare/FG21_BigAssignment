@@ -6,12 +6,12 @@ namespace FG
 {
 	public class Pickup : MonoBehaviour
 	{
-		[SerializeField] private UnityEvent _triggerPickupEvent = new UnityEvent();
+		public static event Action OnPlayerPickup;
 		private void OnTriggerEnter(Collider other)
 		{
 			if (other.tag == "Player")
 			{
-				_triggerPickupEvent.Invoke();
+				GameManager.Instance.AddPickup();
 				Destroy(gameObject);
 			}
 		}
