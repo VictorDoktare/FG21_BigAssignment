@@ -12,6 +12,7 @@ namespace FG
 			if (other.tag == "Player")
 			{
 				GameManager.Instance.AddPickup();
+				GameManager.Instance.CheckForLevelClear();
 				Destroy(gameObject);
 			}
 		}

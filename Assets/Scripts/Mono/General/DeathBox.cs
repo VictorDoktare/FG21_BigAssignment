@@ -10,6 +10,7 @@ namespace FG
 		{
 			if (other.tag == "Player")
 			{
+				GameManager.Instance.ResetCurrentLevelData();
 				var sceneToLoad = SceneManager.GetActiveScene();
 				SceneManager.LoadScene(sceneToLoad.name);
 			}

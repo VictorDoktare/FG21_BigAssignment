@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,8 +10,11 @@ namespace FG
 		private static GameManager instance;
 		public static GameManager Instance => instance;
 
+		private bool levelCleared = false;
 		private int pickupCount;
-		
+
+		public bool LevelCleared => levelCleared;
+
 		public Dictionary<string, bool> unlockLevel = new Dictionary<string, bool>();
 		
 		private void Awake()
@@ -62,6 +66,20 @@ namespace FG
 		{
 			pickupCount++;
 			UIManager.Instance.UpdatePickupHud(pickupCount);
+		}
+
+		public void CheckForLevelClear()
+		{
+			if (pickupCount == GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>().PickupsToWin)
+			{
+				levelCleared = true;
+			}
+		}
+
+		public void ResetCurrentLevelData()
+		{
+			levelCleared = false;
+			pickupCount = 0;
 		}
 	}
 }

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Tile
   - Pickup
+  - GameManager
+  - UIManager
+  - LevelManager
   layers:
   - Default
   - TransparentFX
