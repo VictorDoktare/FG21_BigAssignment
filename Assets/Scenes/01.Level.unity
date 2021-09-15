@@ -395,17 +395,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!114 &219323174 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1976588751018208285, guid: 0e44aeac35445be4aaba3a12cdd67c4f, type: 3}
-  m_PrefabInstance: {fileID: 355637980}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31b6e5e81951b324292d40343813f9db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &222338045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -567,6 +556,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e44aeac35445be4aaba3a12cdd67c4f, type: 3}
+--- !u!114 &355637981 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1976588751018208285, guid: 0e44aeac35445be4aaba3a12cdd67c4f, type: 3}
+  m_PrefabInstance: {fileID: 355637980}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31b6e5e81951b324292d40343813f9db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &431739877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1005,6 +1005,10 @@ PrefabInstance:
     - target: {fileID: 3224289713135394254, guid: d22ea6d55c9bbb1499d2ef5b3f96b4f1, type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3224289713135394254, guid: d22ea6d55c9bbb1499d2ef5b3f96b4f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3224289713135394254, guid: d22ea6d55c9bbb1499d2ef5b3f96b4f1, type: 3}
       propertyPath: m_TagString
@@ -4444,10 +4448,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4616039171936940303, guid: 7571497706a7624448105c5684e2f149, type: 3}
+    - target: {fileID: 4616039171958309936, guid: 7571497706a7624448105c5684e2f149, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 219323174}
+      objectReference: {fileID: 355637981}
     - target: {fileID: 4616039172127255801, guid: 7571497706a7624448105c5684e2f149, type: 3}
       propertyPath: m_Name
       value: Canvas_PauseMenu

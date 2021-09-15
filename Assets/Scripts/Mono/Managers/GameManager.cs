@@ -14,7 +14,7 @@ namespace FG
 		private int pickupCount;
 		private bool playerCanMove;
 
-		public bool PlayerCanMove { get => playerCanMove; set => playerCanMove = value; }
+		//public bool PlayerCanMove { get => playerCanMove; set => playerCanMove = value; }
 		public bool LevelCleared => levelCleared;
 
 		public Dictionary<string, bool> unlockLevel = new Dictionary<string, bool>();
@@ -83,5 +83,8 @@ namespace FG
 			levelCleared = false;
 			pickupCount = 0;
 		}
+
+		public void StartTime() => Time.timeScale = 1;
+		public void StopTime() => Time.timeScale = 0;
 	}
 }
