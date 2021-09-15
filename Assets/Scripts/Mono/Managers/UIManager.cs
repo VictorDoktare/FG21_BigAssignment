@@ -14,7 +14,7 @@ namespace FG
 		private bool gameIsPaused = false;
 
 		public bool GameIsPaused => gameIsPaused;
-
+		
 		private void Awake()
 		{
 			CheckForInstance();
@@ -50,26 +50,44 @@ namespace FG
 
 		public void LoadPauseMenu()
 		{
-			var pauseMenu = GameObject.Find("Canvas_PauseMenu").transform.Find("Pause_Container").gameObject;
+			var pauseMenu = GameObject.Find("Canvas_PauseMenu");
+
 			
 			if (!gameIsPaused)
 			{
-				var eventSystem = EventSystem.current;
-				
 				gameIsPaused = !gameIsPaused;
-				pauseMenu.SetActive(true);
+				pauseMenu.GetComponent<Canvas>().enabled = true;
 				
 				//Sets button to be the selected button when opening the UI. This is needed since im enabling/disabling the object.
-				eventSystem.SetSelectedGameObject(GameObject.Find("Button_Continue"), new BaseEventData(eventSystem));
+				SetEventSystemSelected("Button_Continue");
 				
 				Time.timeScale = 0;
 					
 			}
 			else
 			{
-				gameIsPaused = !gameIsPaused;
-				pauseMenu.SetActive(false);
 				Time.timeScale = 1;
+				gameIsPaused = !gameIsPaused;
+				pauseMenu.GetComponent<Canvas>().enabled = false;
+			}
+		}
+
+		public void SetEventSystemSelected(string buttonName)
+		{
+			var button = GameObject.Find(buttonName);
+			var eventSystem = EventSystem.current;
+			var baseEvent = new BaseEventData(eventSystem);
+			
+			eventSystem.SetSelectedGameObject(button, baseEvent);
+			
+			Debug.Log(eventSystem.currentSelectedGameObject);
+		}
+
+		public void OnLoadLevelSelect()
+		{
+			if (SceneManager.GetActiveScene().name == "00.LevelSelect")
+			{
+				Debug.Log("LevelSelect Loaded");
 			}
 		}
 
