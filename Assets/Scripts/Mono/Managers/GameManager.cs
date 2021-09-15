@@ -12,7 +12,9 @@ namespace FG
 
 		private bool levelCleared = false;
 		private int pickupCount;
+		private bool playerCanMove;
 
+		public bool PlayerCanMove { get => playerCanMove; set => playerCanMove = value; }
 		public bool LevelCleared => levelCleared;
 
 		public Dictionary<string, bool> unlockLevel = new Dictionary<string, bool>();

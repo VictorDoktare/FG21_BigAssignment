@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 namespace FG 
@@ -9,9 +10,11 @@ namespace FG
 	{
 		private static UIManager instance; 
 		public static UIManager Instance => instance;
-		
-		//public static event Action OnPlayerPickup;
-		
+
+		private bool gameIsPaused = false;
+
+		public bool GameIsPaused => gameIsPaused;
+
 		private void Awake()
 		{
 			CheckForInstance();
@@ -43,6 +46,31 @@ namespace FG
 		public void UpdatePickupHud(int value)
 		{
 			GameObject.Find("Text_Pickup").GetComponent<TextMeshProUGUI>().text = value.ToString();
+		}
+
+		public void LoadPauseMenu()
+		{
+			var pauseMenu = GameObject.Find("Canvas_PauseMenu").transform.Find("Pause_Container").gameObject;
+			
+			if (!gameIsPaused)
+			{
+				var eventSystem = EventSystem.current;
+				
+				gameIsPaused = !gameIsPaused;
+				pauseMenu.SetActive(true);
+				
+				//Sets button to be the selected button when opening the UI. This is needed since im enabling/disabling the object.
+				eventSystem.SetSelectedGameObject(GameObject.Find("Button_Continue"), new BaseEventData(eventSystem));
+				
+				Time.timeScale = 0;
+					
+			}
+			else
+			{
+				gameIsPaused = !gameIsPaused;
+				pauseMenu.SetActive(false);
+				Time.timeScale = 1;
+			}
 		}
 
 	}

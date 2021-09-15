@@ -5,7 +5,9 @@ namespace FG
 {
 	public class LevelManager : MonoBehaviour
 	{
-		public int PickupsToWin;
+	
+		[HideInInspector] public int PickupsToWin;
+		
 		private void Start()
 		{
 			//Objects needed to pickup before clearing level.
