@@ -47,6 +47,7 @@ namespace FG
 		{
 			//Makes sure movement is complete before checking for new input
 			if (_isMoving) return;
+			if (UIManager.Instance.GameIsPaused) return;
 			
 			//Input Direction X-Axis
 			if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKey(KeyCode.LeftArrow))
@@ -80,6 +81,9 @@ namespace FG
 		//Rotate cube and correct eventual offsets
 		IEnumerator RollCube(Vector3 anchor, Vector3 axis)
 		{
+			//Pause coroutine if game is paused
+			if (UIManager.Instance.GameIsPaused) yield return null;
+			
 			_isMoving = true;
 
 			for (int i = 0; i < 90 / rollSpeed; i++)
