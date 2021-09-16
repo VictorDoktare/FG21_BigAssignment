@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2412651475894790396}
   m_Layer: 6
-  m_Name: Level
+  m_Name: LevelTemplate
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
