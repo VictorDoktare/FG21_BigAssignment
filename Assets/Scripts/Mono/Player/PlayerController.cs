@@ -54,20 +54,24 @@ namespace FG
 			//Input Direction X-Axis
 			if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKey(KeyCode.LeftArrow))
 			{
-				RollDirection(-0.5f, Vector3.left);
+				RollDirection(-0.5f, Vector3.back);
+				//RollDirection(-0.5f, Vector3.left);
 			}
 			else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKey(KeyCode.RightArrow))
 			{
-				RollDirection(0.5f, Vector3.right);
+				RollDirection(0.5f, Vector3.forward);
+				//RollDirection(0.5f, Vector3.right);
 			}
 			//Input Direction X-Axis
 			else if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKey(KeyCode.UpArrow))
 			{
-				RollDirection(0.5f, Vector3.forward);
+				RollDirection(-0.5f, Vector3.left);
+				//RollDirection(0.5f, Vector3.forward);
 			}
 			else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKey(KeyCode.DownArrow))
 			{
-				RollDirection(-0.5f, Vector3.back);
+				RollDirection(0.5f, Vector3.right);
+				//RollDirection(-0.5f, Vector3.back);
 			}
 		}
 

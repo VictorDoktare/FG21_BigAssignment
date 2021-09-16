@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1718016676199145982}
   - component: {fileID: 1718016676199145983}
   - component: {fileID: 2042839028}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -78,7 +78,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rollSpeed: 6
-  deathParticles: {fileID: 6085718606721961244, guid: 58bbd5bdc5bcb7f41a589157b097c8f2, type: 3}
 --- !u!114 &2042839028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,7 +133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1718016676951406945}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Raycaster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +163,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1718016676966679961}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mesh
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -197,7 +196,7 @@ GameObject:
   - component: {fileID: 1718016677449447392}
   - component: {fileID: 1718016677449447393}
   - component: {fileID: 1718016677449447394}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Player
   m_Icon: {fileID: 0}
