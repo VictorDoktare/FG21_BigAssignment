@@ -83,8 +83,5 @@ namespace FG
 			levelCleared = false;
 			pickupCount = 0;
 		}
-
-		public void StartTime() => Time.timeScale = 1;
-		public void StopTime() => Time.timeScale = 0;
 	}
 }

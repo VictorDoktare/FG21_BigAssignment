@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace FG 
 {
-	public class SpawnObject : MonoBehaviour
+	public class SpawnPlayer : MonoBehaviour
 	{
 		[Range(0.1f, 10)] [SerializeField] private float scaleSpeed;
 		[SerializeField] private AnimationCurve _scaleCurve;
@@ -26,7 +26,7 @@ namespace FG
 			ScaleObject();
 			if (_lerpInterpolant >= 5)
 			{
-				Destroy(gameObject.GetComponent<SpawnObject>());
+				Destroy(gameObject.GetComponent<SpawnPlayer>());
 			}
 		}
 

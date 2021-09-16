@@ -6,8 +6,25 @@
   <component name="ChangeListManager">
     <list default="true" id="851b4afe-8c60-4333-997a-11528cc4233b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BigAssignment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BigAssignment/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/02.Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/02.Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01.Level.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01.Level.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01.Level.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01.Level/PP_Volume Profile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01.Level/PP_Volume Profile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/02.Level.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/02.Level.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Extensions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mono/General/Goal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mono/General/Goal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mono/General/SpawnObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mono/General/SpawnObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mono/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mono/Managers/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mono/Managers/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mono/Managers/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mono/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mono/Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mono/UI/Pause.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mono/UI/Pause.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptObjects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +125,8 @@
       <workItem from="1631540618609" duration="1116000" />
       <workItem from="1631614315607" duration="14956000" />
       <workItem from="1631690506856" duration="3925000" />
-      <workItem from="1631780398452" duration="639000" />
+      <workItem from="1631780398452" duration="703000" />
+      <workItem from="1631782141483" duration="2393000" />
     </task>
     <servers />
   </component>

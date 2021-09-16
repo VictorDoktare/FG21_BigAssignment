@@ -47,7 +47,7 @@ namespace FG
 		{
 			//Makes sure movement is complete before checking for new input
 			if (_isMoving) return;
-			if (UIManager.Instance.GameIsPaused) return;
+			if (GameObject.Find("Canvas_PauseMenu").GetComponent<Pause>().GameIsPaused) return;
 			
 			//Input Direction X-Axis
 			if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKey(KeyCode.LeftArrow))
@@ -82,7 +82,7 @@ namespace FG
 		IEnumerator RollCube(Vector3 anchor, Vector3 axis)
 		{
 			//Pause coroutine if game is paused
-			if (UIManager.Instance.GameIsPaused) yield return null;
+			if (GameObject.Find("Canvas_PauseMenu").GetComponent<Pause>().GameIsPaused) yield return null;
 			
 			_isMoving = true;
 
