@@ -91,13 +91,15 @@ namespace FG
 			if (GameObject.Find("Canvas_PauseMenu").GetComponent<Pause>().GameIsPaused) yield return null;
 			
 			_isMoving = true;
+			
+			GetComponent<AudioSource>().Play();
 
 			for (int i = 0; i < 90 / rollSpeed; i++)
 			{
 				transform.RotateAround(anchor, axis, rollSpeed);
 				yield return new WaitForSeconds(0.01f);
 			}
-			
+
 			//Correcting the position and rotation of the cube to make sure there no decimal offsets after each move since those can add up.
 			transform.position = new Vector3((float)Math.Round((decimal)transform.position.x , 2), 0f,  (float)Math.Round((decimal)transform.position.z , 2));
 			transform.eulerAngles = new Vector3(Mathf.Round(transform.eulerAngles.x), Mathf.Round(transform.eulerAngles.y), Mathf.Round(transform.eulerAngles.z));
