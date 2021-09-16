@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace FG 
 {
@@ -78,10 +79,13 @@ namespace FG
 			}
 		}
 
+		//Reset Data before re-loading the scene
 		public void ResetCurrentLevelData()
 		{
 			levelCleared = false;
 			pickupCount = 0;
+			var sceneToLoad = SceneManager.GetActiveScene();
+			SceneManager.LoadScene(sceneToLoad.name);
 		}
 	}
 }

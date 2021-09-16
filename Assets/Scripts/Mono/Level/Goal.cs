@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -13,10 +14,16 @@ namespace FG
 			//Resets GameManager data and Unlocks a new level before scene change.
 			if (GameManager.Instance.LevelCleared == true)
 			{
-				GameManager.Instance.ResetCurrentLevelData();
-				GameManager.Instance.LevelUnlock(unlockLevel);
-				UIManager.Instance.LoadLevel(nextLevel);
+				StartCoroutine(LoadNextLevel());
 			}
+		}
+
+		private IEnumerator LoadNextLevel()
+		{
+			yield return new WaitForSeconds(0.15f);
+			GameManager.Instance.ResetCurrentLevelData();
+			GameManager.Instance.LevelUnlock(unlockLevel);
+			UIManager.Instance.LoadLevel(nextLevel);
 		}
 	}
 }
