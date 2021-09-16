@@ -1,11 +1,13 @@
 using System;
 using System.Collections;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace FG 
 {
 	public class PlayerController : MonoBehaviour
 	{
+		[Header("Player Settings")]
 		[Range(1, 10)][SerializeField] private float rollSpeed = 1f;
 
 		private GameObject _objRaycaster;
@@ -39,7 +41,7 @@ namespace FG
 		{
 			GroundCheck();
 		}
-
+		
 		#endregion
 		
 		//Directional Input

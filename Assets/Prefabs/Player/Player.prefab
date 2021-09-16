@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rollSpeed: 6
+  deathParticles: {fileID: 6085718606721961244, guid: 58bbd5bdc5bcb7f41a589157b097c8f2, type: 3}
 --- !u!114 &2042839028
 MonoBehaviour:
   m_ObjectHideFlags: 0

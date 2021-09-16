@@ -448,7 +448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1264852744681661273, guid: 477a89dcc58cab749950e4dccf1bf397, type: 3}
       propertyPath: m_Name
-      value: Pickup_Bone_02
+      value: Pickup_02
       objectReference: {fileID: 0}
     - target: {fileID: 6163817076539481413, guid: 477a89dcc58cab749950e4dccf1bf397, type: 3}
       propertyPath: _triggerPickupEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -609,7 +609,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1264852744681661273, guid: 477a89dcc58cab749950e4dccf1bf397, type: 3}
       propertyPath: m_Name
-      value: Pickup_Bone
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 6163817076539481413, guid: 477a89dcc58cab749950e4dccf1bf397, type: 3}
       propertyPath: _triggerPickupEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1088,7 +1088,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1264852744681661273, guid: 477a89dcc58cab749950e4dccf1bf397, type: 3}
       propertyPath: m_Name
-      value: Pickup_Bone_03
+      value: Pickup_03
       objectReference: {fileID: 0}
     - target: {fileID: 6163817076539481413, guid: 477a89dcc58cab749950e4dccf1bf397, type: 3}
       propertyPath: _triggerPickupEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1586,7 +1586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1264852744681661273, guid: 477a89dcc58cab749950e4dccf1bf397, type: 3}
       propertyPath: m_Name
-      value: Pickup_Bone_01
+      value: Pickup_01
       objectReference: {fileID: 0}
     - target: {fileID: 6163817076539481413, guid: 477a89dcc58cab749950e4dccf1bf397, type: 3}
       propertyPath: _triggerPickupEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
