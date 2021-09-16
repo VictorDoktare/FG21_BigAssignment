@@ -48,32 +48,32 @@ namespace FG
 			GameObject.Find("Text_Pickup").GetComponent<TextMeshProUGUI>().text = value.ToString();
 		}
 
-		// public void LoadPauseMenu()
-		// {
-		// 	var pauseMenu = GameObject.Find("Canvas_PauseMenu");
-		// 	
-		// 	if (!gameIsPaused)
-		// 	{
-		// 		gameIsPaused = !gameIsPaused;
-		// 		pauseMenu.GetComponent<Canvas>().enabled = true;
-		// 		
-		// 		//Sets button to be the selected button when opening the UI. This is needed since im enabling/disabling the object.
-		// 		SetEventSystemSelected("Button_Continue");
-		// 		
-		// 		GameManager.Instance.StopTime();
-		// 		
-		// 		Debug.Log("Paused:" + gameIsPaused);
-		//
-		// 	}
-		// 	else
-		// 	{
-		// 		GameManager.Instance.StartTime();
-		// 		gameIsPaused = !gameIsPaused;
-		// 		pauseMenu.GetComponent<Canvas>().enabled = false;
-		// 		
-		// 		Debug.Log("Unpaused:" + gameIsPaused);
-		// 	}
-		// }
+		public void LoadPauseMenu()
+		{
+			var pauseMenu = GameObject.Find("Canvas_PauseMenu");
+			
+			if (!gameIsPaused)
+			{
+				gameIsPaused = !gameIsPaused;
+				pauseMenu.GetComponent<Canvas>().enabled = true;
+				
+				//Sets button to be the selected button when opening the UI. This is needed since im enabling/disabling the object.
+				SetEventSystemSelected("Button_Continue");
+				
+				GameManager.Instance.StopTime();
+				
+				Debug.Log("Paused:" + gameIsPaused);
+		
+			}
+			else
+			{
+				GameManager.Instance.StartTime();
+				gameIsPaused = !gameIsPaused;
+				pauseMenu.GetComponent<Canvas>().enabled = false;
+				
+				Debug.Log("Unpaused:" + gameIsPaused);
+			}
+		}
 
 		//Sets what button that is pre-selected when UI appears.
 		public void SetEventSystemSelected(string buttonName)
