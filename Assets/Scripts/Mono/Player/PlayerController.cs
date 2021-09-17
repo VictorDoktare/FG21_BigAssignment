@@ -9,6 +9,7 @@ namespace FG
 	{
 		[Header("Player Settings")]
 		[Range(1, 10)][SerializeField] private float rollSpeed = 1f;
+		[SerializeField] private AudioClip[] _playerSFX;
 
 		private GameObject _objRaycaster;
 		private RaycastHit _raycastHit;
@@ -92,7 +93,7 @@ namespace FG
 			
 			_isMoving = true;
 			
-			GetComponent<AudioSource>().Play();
+			GetComponent<AudioSource>().PlayOneShot(_playerSFX[0]);
 
 			for (int i = 0; i < 90 / rollSpeed; i++)
 			{
@@ -122,6 +123,14 @@ namespace FG
 				out _raycastHit, 0.6f, _layerMask));
 			{
 				Debug.DrawRay(_objRaycaster.transform.position, _objRaycaster.transform.TransformDirection(Vector3.down) * _raycastHit.distance, Color.magenta);
+			}
+		}
+
+		private void OnTriggerEnter(Collider other)
+		{
+			if (other.tag == "Pickup")
+			{
+				GetComponent<AudioSource>().PlayOneShot(_playerSFX[1], 0.5f);
 			}
 		}
 	}
