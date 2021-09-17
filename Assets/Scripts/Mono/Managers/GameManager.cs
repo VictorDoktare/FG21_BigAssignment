@@ -95,6 +95,7 @@ namespace FG
 		public void ExitGame()
 		{
 			Application.Quit();
+			UnityEditor.EditorApplication.isPlaying = false;
 		}
 	}
 }
