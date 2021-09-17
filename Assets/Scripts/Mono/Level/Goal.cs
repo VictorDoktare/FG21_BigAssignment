@@ -9,6 +9,13 @@ namespace FG
 	{
 		[SerializeField] private string nextLevel;
 		[SerializeField] private string unlockLevel;
+		[SerializeField] private GameObject vfx;
+
+		private void Update()
+		{
+			TeleporterActivation();
+		}
+
 		private void OnTriggerEnter(Collider other)
 		{
 			//Resets GameManager data and Unlocks a new level before scene change.
@@ -24,6 +31,14 @@ namespace FG
 			GameManager.Instance.ResetCurrentLevelData();
 			GameManager.Instance.LevelUnlock(unlockLevel);
 			UIManager.Instance.LoadLevel(nextLevel);
+		}
+
+		private void TeleporterActivation()
+		{
+			if (GameManager.Instance.LevelCleared == true)
+			{
+				vfx.SetActive(true);
+			}
 		}
 	}
 }

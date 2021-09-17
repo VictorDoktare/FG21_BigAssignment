@@ -79,6 +79,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rollSpeed: 6
+  _playerSFX:
+  - {fileID: 8300000, guid: 0bfa63cb8aa540447bed49841dd11e56, type: 3}
+  - {fileID: 8300000, guid: 342f03f10f5f5cc43b9e9b8375324881, type: 3}
 --- !u!114 &2042839028
 MonoBehaviour:
   m_ObjectHideFlags: 0
