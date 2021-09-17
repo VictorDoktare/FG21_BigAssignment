@@ -84,6 +84,8 @@ namespace FG
 		//Reset Data before re-loading the scene
 		public void ResetCurrentLevelData()
 		{
+			UIManager.Instance.WinAmount = 0;
+			UIManager.Instance.FillerBar.fillAmount = 0;
 			levelCleared = false;
 			pickupCount = 0;
 			var sceneToLoad = SceneManager.GetActiveScene();

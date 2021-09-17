@@ -13,10 +13,14 @@ namespace FG
 		private static UIManager instance; 
 		public static UIManager Instance => instance;
 
-		//private bool gameIsPaused = false;
+		private float winAmount;
+		private Image fillerBar;
 
-		//public bool GameIsPaused => gameIsPaused;
-		
+		public float WinAmount { get => winAmount; set => winAmount = value; }
+
+		public Image FillerBar
+		{ get => fillerBar; set => fillerBar = value; }
+
 		private void Awake()
 		{
 			CheckForInstance();
@@ -47,11 +51,12 @@ namespace FG
 		//Update UI HUD containing the amount of pickups collected.
 		public void UpdatePickupHud(int value)
 		{
-			var winAmount = GameObject.Find("LevelManager").GetComponent<LevelManager>().PickupsToWin;
-			var fillerBar = GameObject.Find("PickupFiller").GetComponent<Image>();
+			WinAmount = GameObject.Find("LevelManager").GetComponent<LevelManager>().PickupsToWin;
+			FillerBar = GameObject.Find("PickupFiller").GetComponent<Image>();
 			var fillPercent = 1 / winAmount;
 
 			fillerBar.fillAmount += fillPercent;
+			Debug.Log(fillerBar.fillAmount);
 
 			//GameObject.Find("Text_Pickup").GetComponent<TextMeshProUGUI>().text = value.ToString();
 		}

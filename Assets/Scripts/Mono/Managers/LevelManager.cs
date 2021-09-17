@@ -12,6 +12,7 @@ namespace FG
 		{
 			//Objects needed to pickup before clearing level.
 			PickupsToWin = GameObject.FindGameObjectsWithTag("Pickup").Length;
+			UIManager.Instance.WinAmount = PickupsToWin;
 		}
 	}
 }

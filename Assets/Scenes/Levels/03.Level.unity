@@ -6745,6 +6745,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8027215182705747031, guid: 7170ae4f89dc1e142b4c2a4a432fb4e0, type: 3}
+      propertyPath: nextLevel
+      value: 00.StartMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8027215182705747031, guid: 7170ae4f89dc1e142b4c2a4a432fb4e0, type: 3}
+      propertyPath: unlockLevel
+      value: level03
+      objectReference: {fileID: 0}
     - target: {fileID: 8741502250592661402, guid: 7170ae4f89dc1e142b4c2a4a432fb4e0, type: 3}
       propertyPath: m_Name
       value: Tile_Goal
@@ -7039,6 +7047,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1870967006, guid: f99f72cd192f34f449c392080bd11942, type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4338545597673070042, guid: f99f72cd192f34f449c392080bd11942, type: 3}
       propertyPath: m_Name
       value: Canvas_HUD
