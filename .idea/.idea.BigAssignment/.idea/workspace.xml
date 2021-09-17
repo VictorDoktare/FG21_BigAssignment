@@ -6,12 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="851b4afe-8c60-4333-997a-11528cc4233b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BigAssignment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BigAssignment/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tiles/Tile_Blocker.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tiles/Tile_Blocker.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvas_HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvas_HUD.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvas_LevelSelect.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvas_LevelSelect.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/00.LevelSelect.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/00.LevelSelect.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/00.StartMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/00.StartMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/01.Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/01.Level.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/02.Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/02.Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/03.Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/03.Level.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mono/Level/Blocker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mono/Level/Blocker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mono/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mono/Player/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,9 +35,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/SelectableEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Mono/Managers/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Mono/Level/Blocker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Mono/UI/LevelSelection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Mono/Managers/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/BaseInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -114,6 +114,7 @@
       <workItem from="1631690506856" duration="3925000" />
       <workItem from="1631780398452" duration="703000" />
       <workItem from="1631782141483" duration="15610000" />
+      <workItem from="1631863274001" duration="772000" />
     </task>
     <servers />
   </component>

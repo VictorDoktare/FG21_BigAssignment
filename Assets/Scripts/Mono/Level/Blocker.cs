@@ -25,7 +25,7 @@ namespace FG
 			if (other.tag == "Player")
 			{
 				isActivated = true;
-				PlaySoundFX(blockerAudio[1], 0.25f);
+				PlaySoundFX(blockerAudio[1], 0.1f);
 				spikes.transform.localPosition = new Vector3(0, 0, 0);
 			}
 		}
