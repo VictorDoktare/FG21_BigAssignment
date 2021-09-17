@@ -91,5 +91,10 @@ namespace FG
 			var sceneToLoad = SceneManager.GetActiveScene();
 			SceneManager.LoadScene(sceneToLoad.name);
 		}
+
+		public void ExitGame()
+		{
+			Application.Quit();
+		}
 	}
 }

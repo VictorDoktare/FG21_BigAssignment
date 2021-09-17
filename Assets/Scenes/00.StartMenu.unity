@@ -974,6 +974,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3224289713293563264}
+        m_TargetAssemblyTypeName: FG.GameManager, Assembly-CSharp
+        m_MethodName: ExitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1291192603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1353,6 +1365,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d22ea6d55c9bbb1499d2ef5b3f96b4f1, type: 3}
+--- !u!114 &3224289713293563264 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3224289713135394253, guid: d22ea6d55c9bbb1499d2ef5b3f96b4f1, type: 3}
+  m_PrefabInstance: {fileID: 3224289713293563263}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf53cf369ea55564eaf6ba67a7911025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7686547148048147959
 PrefabInstance:
   m_ObjectHideFlags: 0
