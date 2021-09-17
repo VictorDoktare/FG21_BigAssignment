@@ -12319,6 +12319,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1828922849, guid: f99f72cd192f34f449c392080bd11942, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 93.64168
+      objectReference: {fileID: 0}
     - target: {fileID: 4338545597673070042, guid: f99f72cd192f34f449c392080bd11942, type: 3}
       propertyPath: m_Name
       value: Canvas_HUD
@@ -12405,6 +12409,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4338545597673070046, guid: f99f72cd192f34f449c392080bd11942, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338545598457418835, guid: f99f72cd192f34f449c392080bd11942, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

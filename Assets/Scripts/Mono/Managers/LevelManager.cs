@@ -6,7 +6,7 @@ namespace FG
 	public class LevelManager : MonoBehaviour
 	{
 	
-		[HideInInspector] public int PickupsToWin;
+		[HideInInspector] public float PickupsToWin;
 		
 		private void Start()
 		{

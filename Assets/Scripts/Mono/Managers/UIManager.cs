@@ -2,6 +2,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
+using Image = UnityEngine.UI.Image;
 
 namespace FG 
 {
@@ -45,7 +47,13 @@ namespace FG
 		//Update UI HUD containing the amount of pickups collected.
 		public void UpdatePickupHud(int value)
 		{
-			GameObject.Find("Text_Pickup").GetComponent<TextMeshProUGUI>().text = value.ToString();
+			var winAmount = GameObject.Find("LevelManager").GetComponent<LevelManager>().PickupsToWin;
+			var fillerBar = GameObject.Find("PickupFiller").GetComponent<Image>();
+			var fillPercent = 1 / winAmount;
+
+			fillerBar.fillAmount += fillPercent;
+
+			//GameObject.Find("Text_Pickup").GetComponent<TextMeshProUGUI>().text = value.ToString();
 		}
 		
 		//Sets what button that is pre-selected when UI appears.
